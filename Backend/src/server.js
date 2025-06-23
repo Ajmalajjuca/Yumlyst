@@ -53,6 +53,9 @@ app.post('/api/favorites', async (req, res) => {
 })
 
 app.get('/api/favorites/:userId', async (req, res) => {
+  console.log('req.params', req.params);
+  
+  
   try {
     const { userId } = req.params
     const UserFavorites = await db
