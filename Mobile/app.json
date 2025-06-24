@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Mobile",
+    "name": "Yumlyst",
     "slug": "Mobile",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -12,11 +12,13 @@
       "supportsTablet": true
     },
     "android": {
+      "permissions": ["INTERNET"],
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.ajmalca.Mobile"
     },
     "web": {
       "bundler": "metro",
@@ -37,6 +39,13 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "395e3da3-9314-4f85-8258-bb3c8635ef77"
+      }
+    },
+    "owner": "ajmalca"
   }
 }
